@@ -1,0 +1,45 @@
+@keyframes glowPulseGreen {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(37, 255, 114, 0.2), 0 0 10px rgba(37, 255, 114, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(37, 255, 114, 0.6), 0 0 30px rgba(37, 255, 114, 0.5);
+  }
+}
+
+@keyframes glowPulseBlue {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(50, 212, 255, 0.2), 0 0 10px rgba(50, 212, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(50, 212, 255, 0.6), 0 0 30px rgba(50, 212, 255, 0.5);
+  }
+}
+
+.btn {
+  padding: 10px 10px;
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp {
+  background-color: #25D366;
+  animation: glowPulseGreen 2s infinite ease-in-out;
+  animation-delay: 0s;
+}
+
+.telegram {
+  background-color: #0088cc;
+  animation: glowPulseBlue 2s infinite ease-in-out;
+  animation-delay: 1s;
+}
